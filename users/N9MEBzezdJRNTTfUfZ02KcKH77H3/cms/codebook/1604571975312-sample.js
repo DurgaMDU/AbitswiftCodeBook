@@ -6,7 +6,7 @@ export class GitService {
   private readonly path: string
   private readonly repo: string
 
-//TEst
+//TEst via Git  editted
 
   constructor () {
     this.path = process.env.GIT_PATH
