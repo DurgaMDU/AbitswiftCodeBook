@@ -6,7 +6,7 @@ export class GitService {
   private readonly path: string
   private readonly repo: string
 
-//Test via Git  editted by users testing
+//TEst via Git  editted
 
   constructor () {
     this.path = process.env.GIT_PATH
@@ -20,7 +20,6 @@ export class GitService {
   }
 
   public async getLastVersion () {
-	//To list lasters version of files
     await this.git.fetch()
     return this.git.pull('origin', 'master')
   }
